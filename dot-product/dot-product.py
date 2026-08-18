@@ -8,6 +8,6 @@ def dot_product(x, y):
     x = np.asarray(x, dtype=np.float64)
     y = np.asarray(y, dtype=np.float64)
 
-    if x.shape != y.shape:
-        raise ValueError()
+    if x.ndim != 1 or y.ndim != 1:
+        raise ValueError("Both inputs must be 1D arrays")
     return float(np.sum(x*y))
