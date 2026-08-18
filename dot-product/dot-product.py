@@ -10,4 +10,4 @@ def dot_product(x, y):
 
     if x.shape != y.shape:
         raise ValueError()
-    return np.sum(x*y)
+    return float(np.sum(x*y))
